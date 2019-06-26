@@ -1,6 +1,6 @@
 <?php
 
-namespace Msonowal\Audit\Traits;
+namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Msonowal\Audit\Repositories;
+namespace Develoopin\Audit\Repositories;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Msonowal\Audit\Contracts\RepositoryContract;
-use Msonowal\Audit\Exceptions\AuditActivityNotFoundException;
-use Msonowal\Audit\Jobs\AuditActivityAddJob;
-use Msonowal\Audit\Models\AuditActivityMoloquent;
+use Develoopin\Audit\Contracts\RepositoryContract;
+use Develoopin\Audit\Exceptions\AuditActivityNotFoundException;
+use Develoopin\Audit\Jobs\AuditActivityAddJob;
+use Develoopin\Audit\Models\AuditActivityMoloquent;
 
 class AuditServiceRepository extends AuditLogger implements RepositoryContract
 {
@@ -79,7 +79,7 @@ class AuditServiceRepository extends AuditLogger implements RepositoryContract
 
     protected static function fireAddedEvent(AuditActivityMoloquent $audit) : void
     {
-        event(new \Msonowal\Audit\Events\AuditAddedEvent($audit));
+        event(new \Develoopin\Audit\Events\AuditAddedEvent($audit));
     }
 
     /**

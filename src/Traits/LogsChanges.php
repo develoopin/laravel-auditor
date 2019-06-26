@@ -1,11 +1,11 @@
 <?php
 
-namespace Msonowal\Audit\Traits;
+namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Msonowal\Audit\AuditServiceProvider;
-use Msonowal\Audit\Repositories\AuditServiceRepository;
+use Develoopin\Audit\AuditServiceProvider;
+use Develoopin\Audit\Repositories\AuditServiceRepository;
 
 trait LogsChanges
 {

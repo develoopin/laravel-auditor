@@ -1,5 +1,5 @@
 {
-    "name": "msonowal/laravel-auditor",
+    "name": "develoopin/laravel-auditor",
     "description": "A simple mongo activity logger to record various events of your laravel application",
     "type": "library",
     "keywords":
@@ -34,11 +34,16 @@
             "email": "manash.sonowal@conversionbug.com",
             "homepage": "https://www.conversionbug.com",
             "role": "Developer"
+        },
+        {
+            "name": "Develoopin",
+            "email": "develoopindonesia@gmail.com",
+            "role": "Colaborators"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Msonowal\\Audit\\": "src/"
+            "Develoopin\\Audit\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -46,13 +51,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Msonowal\\Audit\\Tests\\": "tests/"
+            "Develoopin\\Audit\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Msonowal\\Audit\\AuditServiceProvider"
+                "Develoopin\\Audit\\AuditServiceProvider"
             ]
         }
     }

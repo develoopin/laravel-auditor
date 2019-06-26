@@ -1,6 +1,6 @@
 <?php
 
-namespace Msonowal\Audit\Repositories;
+namespace Develoopin\Audit\Repositories;
 
 use Carbon\Carbon;
 use Illuminate\Auth\AuthManager;
@@ -8,9 +8,9 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Traits\Macroable;
-use Msonowal\Audit\AuditServiceProvider;
-use Msonowal\Audit\Contracts\AuditActivityContract;
-use Msonowal\Audit\Exceptions\CouldNotLogActivity;
+use Develoopin\Audit\AuditServiceProvider;
+use Develoopin\Audit\Contracts\AuditActivityContract;
+use Develoopin\Audit\Exceptions\CouldNotLogActivity;
 
 class AuditLogger
 {
@@ -58,7 +58,7 @@ class AuditLogger
     protected $authDriver;
 
     /**
-     * @var \Msonowal\Audit\Repositories\AuditStatus
+     * @var \Develoopin\Audit\Repositories\AuditStatus
      */
     protected $logStatus;
 

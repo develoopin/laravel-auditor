@@ -1,7 +1,7 @@
 <?php
 
-use Msonowal\Audit\Repositories\AuditServiceRepository;
-use Msonowal\Audit\Repositories\AuditStatus;
+use Develoopin\Audit\Repositories\AuditServiceRepository;
+use Develoopin\Audit\Repositories\AuditStatus;
 
 if (!function_exists('audit')) {
     function audit(string $logName = null): AuditServiceRepository

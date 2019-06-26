@@ -1,6 +1,6 @@
 <?php
 
-namespace Msonowal\Audit\Exceptions;
+namespace Develoopin\Audit\Exceptions;
 
 class AuditActivityNotFoundException extends \Exception
 {

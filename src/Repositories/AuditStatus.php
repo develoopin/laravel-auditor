@@ -1,6 +1,6 @@
 <?php
 
-namespace Msonowal\Audit\Repositories;
+namespace Develoopin\Audit\Repositories;
 
 use Illuminate\Config\Repository;
 

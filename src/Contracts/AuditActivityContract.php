@@ -1,6 +1,6 @@
 <?php
 
-namespace Msonowal\Audit\Contracts;
+namespace Develoopin\Audit\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;

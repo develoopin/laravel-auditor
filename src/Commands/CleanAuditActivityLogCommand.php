@@ -1,9 +1,9 @@
 <?php
 
-namespace Msonowal\Audit\Commands;
+namespace Develoopin\Audit\Commands;
 
 use Illuminate\Console\Command;
-use Msonowal\Audit\Repositories\AuditServiceRepository;
+use Develoopin\Audit\Repositories\AuditServiceRepository;
 
 class CleanAuditActivityLogCommand extends Command
 {

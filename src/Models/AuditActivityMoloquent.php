@@ -1,13 +1,13 @@
 <?php
 
-namespace Msonowal\Audit\Models;
+namespace Develoopin\Audit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Collection;
 use Jenssegers\Mongodb\Eloquent\HybridRelations;
 use Jenssegers\Mongodb\Eloquent\Model as Moloquent;
-use Msonowal\Audit\Contracts\AuditActivityContract;
+use Develoopin\Audit\Contracts\AuditActivityContract;
 
 class AuditActivityMoloquent extends Moloquent implements AuditActivityContract
 {

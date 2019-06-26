@@ -1,9 +1,9 @@
 <?php
 
-namespace Msonowal\Audit\Traits;
+namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Msonowal\Audit\AuditServiceProvider;
+use Develoopin\Audit\AuditServiceProvider;
 
 trait CausesActivity
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Msonowal\Audit\Events;
+namespace Develoopin\Audit\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Msonowal\Audit\Models\AuditActivityMoloquent;
+use Develoopin\Audit\Models\AuditActivityMoloquent;
 
 class AuditAddedEvent
 {

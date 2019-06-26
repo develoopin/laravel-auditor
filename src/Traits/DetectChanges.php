@@ -1,9 +1,9 @@
 <?php
 
-namespace Msonowal\Audit\Traits;
+namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Model;
-use Msonowal\Audit\Exceptions\CouldNotLogActivity;
+use Develoopin\Audit\Exceptions\CouldNotLogActivity;
 
 trait DetectChanges
 {

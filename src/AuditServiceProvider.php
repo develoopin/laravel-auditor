@@ -1,12 +1,12 @@
 <?php
 
-namespace Msonowal\Audit;
+namespace Develoopin\Audit;
 
 use Illuminate\Database\Eloquent\Model;
-use Msonowal\Audit\Commands\CleanAuditActivityLogCommand;
-use Msonowal\Audit\Models\AuditActivityMoloquent;
-use Msonowal\Audit\Repositories\AuditServiceRepository;
-use Msonowal\Audit\Repositories\AuditStatus;
+use Develoopin\Audit\Commands\CleanAuditActivityLogCommand;
+use Develoopin\Audit\Models\AuditActivityMoloquent;
+use Develoopin\Audit\Repositories\AuditServiceRepository;
+use Develoopin\Audit\Repositories\AuditStatus;
 
 class AuditServiceProvider extends \Illuminate\Support\ServiceProvider
 {
