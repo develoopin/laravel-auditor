@@ -14,7 +14,7 @@ By Default Users Ip address and User Agents are Captured for every request if it
 ## Installation
 
 ```bash
-$ composer require msonowal/laravel-auditor
+$ composer require develoopin/laravel-auditor
 ```
 
 The package will automatically register itself.
@@ -23,7 +23,7 @@ The package will automatically register itself.
 You can optionally publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Msonowal\Audit\AuditServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Develoopin\Audit\AuditServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -81,7 +81,7 @@ This is the contents of the published config file:
 
 You can publish the migration with:
 ```bash
-php artisan vendor:publish --provider="Msonowal\Audit\AuditServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Develoopin\Audit\AuditServiceProvider" --tag="migrations"
 ```
 
 *Note*: The default migration adds the indexes to the collection for the essentials fields however you can modify and tailor upto your needs.
@@ -171,9 +171,9 @@ All the test files should be inside the `tests/` directory. Here is an example:
 
 <?php
 
-namespace Msonowal\Audit\Tests\Unit;
+namespace Develoopin\Audit\Tests\Unit;
 
-use Msonowal\Audit\Tests\TestCase;
+use Develoopin\Audit\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
