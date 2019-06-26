@@ -14,8 +14,6 @@ trait LogsChanges
 
     protected $enableLoggingModelsEvents = true;
 
-    protected $enableLoggingInQueue = true;
-
     protected static function bootLogsChanges()
     {
         static::eventsToBeRecorded()->each(
@@ -38,7 +36,7 @@ trait LogsChanges
                             ->useLog($logName)
                             ->performedOn($model)
                             ->withProperties($model->attributeValuesToBeLogged($eventName))
-                            ->queue($model->enableLoggingInQueue)
+                            ->queue(config('mongo-audit.use_queue', true))
                             ->add($description);
                     }
                 );
