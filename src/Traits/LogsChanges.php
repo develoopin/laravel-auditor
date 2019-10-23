@@ -4,6 +4,7 @@ namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Arr;
 use Develoopin\Audit\AuditServiceProvider;
 use Develoopin\Audit\Repositories\AuditServiceRepository;
 
@@ -120,13 +121,13 @@ trait LogsChanges
             return true;
         }
 
-        if (array_has($this->getDirty(), 'deleted_at')) {
+        if (Arr::has($this->getDirty(), 'deleted_at')) {
             if ($this->getDirty()['deleted_at'] === null) {
                 return false;
             }
         }
 
         //do not log update event if only ignored attributes are changed
-        return (bool) count(array_except($this->getDirty(), $this->attributesToBeIgnored()));
+        return (bool) count(Arr::except($this->getDirty(), $this->attributesToBeIgnored()));
     }
 }

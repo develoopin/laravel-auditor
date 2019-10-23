@@ -3,6 +3,7 @@
 namespace Develoopin\Audit\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 use Develoopin\Audit\Exceptions\CouldNotLogActivity;
 
 trait DetectChanges
@@ -116,7 +117,7 @@ trait DetectChanges
     {
         $changes = [];
         foreach ($model->attributesToBeLogged() as $attribute) {
-            if (str_contains($attribute, '.')) {
+            if (Str::contains($attribute, '.')) {
                 $changes += self::getRelatedModelAttributeValue($model, $attribute);
             } else {
                 $changes += collect($model)->only($attribute)->toArray();
