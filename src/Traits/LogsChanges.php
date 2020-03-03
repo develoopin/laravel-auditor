@@ -58,7 +58,7 @@ trait LogsChanges
         return $this;
     }
 
-    public function activities(): MorphMany
+    public function activities()
     {
         return $this->morphManyWithoutCollection(AuditServiceProvider::determineActivityModel(), 'subject');
     }
