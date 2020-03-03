@@ -5,6 +5,7 @@ namespace Develoopin\Audit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 use Jenssegers\Mongodb\Eloquent\HybridRelations;
 use Jenssegers\Mongodb\Eloquent\Model as Moloquent;
 use Develoopin\Audit\Contracts\AuditActivityContract;
@@ -54,7 +55,7 @@ class AuditActivityMoloquent extends Moloquent implements AuditActivityContract
 
     public function getExtraProperty(string $propertyName)
     {
-        return array_get($this->properties, $propertyName);
+        return Arr::get($this->properties, $propertyName);
     }
 
     public function changes(): Collection

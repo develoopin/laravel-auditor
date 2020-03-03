@@ -11,6 +11,7 @@ use Illuminate\Support\Traits\Macroable;
 use Develoopin\Audit\AuditServiceProvider;
 use Develoopin\Audit\Contracts\AuditActivityContract;
 use Develoopin\Audit\Exceptions\CouldNotLogActivity;
+use Illuminate\Support\Arr;
 
 class AuditLogger
 {
@@ -260,7 +261,7 @@ class AuditLogger
 
                 $attributeValue = $attributeValue->toArray();
 
-                return array_get($attributeValue, $propertyName, $match);
+                return Arr::get($attributeValue, $propertyName, $match);
             },
             $description
         );
